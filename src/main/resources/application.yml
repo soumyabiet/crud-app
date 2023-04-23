@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  
+spring:
+  application:
+    name: YML App
+  profiles:
+    active: local, test
+    
+logging:
+  level:
+    web: debug  
+    
+app:
+  message=This is the YML Application Property for ${spring.application.name} 
