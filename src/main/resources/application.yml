@@ -6,10 +6,12 @@ spring:
     name: YML App
   profiles:
     active: local, test
+  security:
+    enabled: false
     
 logging:
   level:
     web: debug  
     
 app:
-  message=This is the YML Application Property for ${spring.application.name} 
+  message=This is the YML Application Property for ${spring.application.name}

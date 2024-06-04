@@ -14,5 +14,9 @@ public class CrudController {
 	public ResponseEntity<String> info() {
 		return new ResponseEntity<String>("User List", HttpStatus.OK);
 	}
+	@GetMapping(value = "/home")
+	public ResponseEntity<String> home() {
+		return new ResponseEntity<String>("Landing Page", HttpStatus.OK);
+	}
 
 }
